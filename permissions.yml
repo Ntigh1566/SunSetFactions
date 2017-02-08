@@ -1,0 +1,200 @@
+groups:
+  guest:
+    options:
+      default: true
+      prefix: '&8[&fGuest&8] '
+    permissions:
+    - ffly.yours
+    - ffly.fly
+    - mycommand.cmd.website
+    - mycommand.cmd.pvp
+    - ce.ench.*
+    - banknotes.withdraw
+    - banknotes.deposit
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.build
+    - essentials.exp
+    - essentials.home
+    - essentials.kit
+    - essentials.kits
+    - essentials.kits.food
+    - essentials.kits.Guest
+    - essentials.kits.once
+    - essentials.motd
+    - essentials.msg
+    - essentials.pay
+    - essentials.sethome
+    - essentials.signs.use.*
+    - essentials.spawn
+    - essentials.tpa
+    - essentials.tpa.accept
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.warp
+    - essentials.warp.enchant
+    - essentials.warp.end
+    - essentials.warp.list
+    - essentials.warp.nether
+    - essentials.warp.pvp
+    - essentials.warp.shop
+    - essentials.warps.shop
+    - chestcommands.open.help.yml
+    - chestcommands.open.kit.yml
+    - chestcommands.open.rules.yml
+    - proquests.menu.open.*
+    - chestcommands.open.warp.yml
+    - proquests.active.2
+    - mycommand.cmd.wild
+    - supplycrates.time
+    - mycommand.cmd.customenchants
+    - mycommand.cmd.donate
+    - mycommand.cmd.warzonecrates
+    - auctionhouse.use
+    - auctionhouse.sell
+    - auctionhouse.limit.10
+    inheritance: []
+  iron:
+    default: false
+    permissions:
+    - ffly.instant
+    - proquests.active.5
+    - essentials.kits.iron
+    - essentials.kits.iron2
+    - tradeplus.trade
+    - auctionhouse.limit.15
+    inheritance:
+    - guest
+    options:
+      prefix: '&8[&7Iron&8] '
+  gold:
+    default: false
+    permissions:
+    - auctionhouse.limit.20
+    - proquests.active.10
+    - essentials.kits.gold
+    - essentials.kits.gold2
+    inheritance:
+    - iron
+    options:
+      prefix: '&8[&6Gold&8] '
+  diamond:
+    default: false
+    permissions:
+    - auctionhouse.limit.30
+    - proquests.active.20
+    - essentials.kits.diamond
+    - essentials.kits.diamond2
+    inheritance:
+    - gold
+    options:
+      prefix: '&8[&bDiamond&8] '
+  emerald:
+    default: false
+    permissions:
+    - auctionhouse.limit.40
+    - proquests.active.30
+    - essentials.kits.emerald
+    - essentials.kits.emerald2
+    inheritance:
+    - diamond
+    options:
+      prefix: '&8[&2Emerald&8] '
+  obsidian:
+    default: false
+    permissions:
+    - auctionhouse.limit.50
+    - proquests.active.40
+    - essentials.kits.obsidian
+    - essentials.kits.obsidian2
+    inheritance:
+    - emerald
+    options:
+      prefix: '&8[&8Obsidian&8] '
+  moderator:
+    default: false
+    permissions:
+    - ffly.ground
+    - hcvaults.bypass.timer
+    - mobstacker.update
+    - litebans.ban
+    - litebans.tempban
+    - litebans.mute
+    - litebans.tempmute
+    - litebans.unmute
+    - litebans.unban
+    - litebans.kick
+    - litebans.warn
+    - litebans.unwarn
+    - battlelevels.version
+    - supplycrates.drops
+    - supplycrates.start
+    - litebans.warnings
+    - litebans.togglechat
+    inheritance:
+    - member
+    options:
+      prefix: '&8[&a&lMOD&8] '
+  admin:
+    default: false
+    permissions:
+    - ffly.bypass
+    - tradeplus.admin
+    - litebans.overide
+    - litebans.ipban
+    - litebans.history
+    - litebans.staffhistory
+    - supplycrates.edit
+    - litebans.prunehistory
+    - litebans.staffrollback
+    - supplycrates.additem
+    - supplycrates.reload
+    - battlelevels.set
+    - cratekeys.admin
+    - supplycrates.stop
+    - litebans.iphistory
+    - litebans.banlist
+    - litebans.*
+    - battlelevels.reload
+    - battlelevels.score
+    - battlelevels.level
+    - battlelevels.reset
+    - supplycrates.addcrates
+    - chestcommands.command.help
+    - hcvaults.reload
+    - banknotes.*
+    - hcvaults.open.other
+    - chestcommands.command.reload
+    - ce.*
+    - ce.cmd.*
+    - ce.item.*
+    - ce.ench.*
+    - auctionhouse.admin
+    - tradeplus.admin.silent
+    - mobstacker.reload
+    - mobstacker.toggle
+    - mobstacker.killall
+    inheritance:
+    - moderator
+    options:
+      prefix: '&8[&5&lADMIN&8] '
+  owner:
+    default: false
+    permissions:
+    - ffly.fly
+    - ffly.pypass
+    - litebans.*
+    - null
+    inheritance:
+    - admin
+    options:
+      prefix: '&8[&4&lOWNER&8] '
+schema-version: 1
+users:
+  047f0d42-018f-45cb-925a-f41b526f5d02:
+    permissions:
+    - '*'
+    group:
+    - owner
+    options:
+      name: EndyPlaysMC
